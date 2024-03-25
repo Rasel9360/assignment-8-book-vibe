@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/H2QkJW9/book1.jpg",
+      "review": "A timeless classic that delves deep into the struggles of adolescence and the search for authenticity.",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming of Age", "Literary Fiction"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": 2,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/Ng0PRWH/book2.jpg",
+      "review": "A chilling portrayal of a dystopian society that serves as a stark warning about the dangers of totalitarianism.",
+      "totalPages": 328,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political Fiction"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "id": 3,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/X5KFwjK/book3.jpg",
+      "review": "A poignant exploration of racial injustice and moral growth set in the American South.",
+      "totalPages": 281,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Legal Drama", "Southern Gothic"],
+      "publisher": "J.B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 4,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "the_great_gatsby.jpg",
+      "review": "An exquisite portrayal of the Jazz Age and the elusive American Dream.",
+      "totalPages": 180,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Romance", "Tragedy"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": 5,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "pride_and_prejudice.jpg",
+      "review": "A delightful comedy of manners that remains relevant through its exploration of social norms and love.",
+      "totalPages": 279,
+      "rating": 4.4,
+      "category": "Fiction",
+      "tags": ["Romance", "Satire"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": 6,
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "the_hobbit.jpg",
+      "review": "An enchanting adventure that introduces readers to the captivating world of Middle-earth.",
+      "totalPages": 310,
+      "rating": 4.8,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Quest"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1937
+    }
+  ]
+  
