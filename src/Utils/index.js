@@ -12,13 +12,13 @@ const getBooks = () => {
 
 // Save blogs
 
-const saveBooks = (id) => {
+const saveBooks = (book) => {
     let books = getBooks();
-    const isExist = books.find(bId => bId === id)
+    const isExist = books.find(b => b.id === book.id)
     if (isExist) {
         return toast.error("This blog already exists.");
     }
-    books.push(id);
+    books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
     toast.success("The blog has been saved successfully!");
 }

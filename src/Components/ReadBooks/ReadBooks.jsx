@@ -1,7 +1,23 @@
+import { useEffect, useState } from "react";
+import { getBooks } from "../../Utils";
+import Read from "../Read/Read";
+
 const ReadBooks = () => {
+    const [read, setRead] = useState([]);
+
+    useEffect(() => {
+        const storedBook = getBooks()
+        setRead(storedBook)
+    }, [])
+    // console.log(read)
     return (
         <div>
-            <h1>This is ReadBooks page</h1>            
+            
+            <div>
+                {
+                    read.map(rBook => <Read key={rBook.id} rBook={rBook}></Read>)
+                }
+            </div>
         </div>
     );
 };

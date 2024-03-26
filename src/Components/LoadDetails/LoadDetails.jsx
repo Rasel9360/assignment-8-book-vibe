@@ -10,7 +10,7 @@ const LoadDetails = () => {
     const { image, bookName, author, category, rating, tags, review, totalPages, publisher, yearOfPublishing } = book;
 
     const handleReadBook = () =>{
-        saveBooks(idInt);
+        saveBooks(book);
     }
 
         console.log(book);
