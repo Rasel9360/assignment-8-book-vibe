@@ -2,11 +2,20 @@ import { Link } from "react-router-dom";
 
 const Error = () => {
     return (
-        <div className="flex flex-col min-h-screen justify-center items-center">
-        <h2 className="text-5xl">Oops...</h2>           
-        <p>Page not found</p>
-        <Link to="/">Go Back Home</Link>
-    </div>
+        <section className="flex items-center min-h-screen p-1">
+            <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+                <div className="max-w-md text-center">
+                    <h2 className="mb-8 font-extrabold text-9xl ">
+                        <span className="sr-only">Error</span>404
+                    </h2>
+                    <p className="text-2xl font-semibold md:text-3xl p-font">Sorry, we couldn't find this page.</p>
+                    <p className="mt-4 mb-8">But dont worry, you can find plenty of other things on our homepage.</p>
+                    <Link 
+                    to='/'
+                    className="px-8 py-3 font-semibold rounded bg-[#23BE0A] text-white">Back to homepage</Link>
+                </div>
+            </div>
+        </section>
     );
 };
 
