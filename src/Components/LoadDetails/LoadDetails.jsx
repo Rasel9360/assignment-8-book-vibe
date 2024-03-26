@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBooks } from "../../Utils";
 
 const LoadDetails = () => {
     const books = useLoaderData();
@@ -8,13 +9,17 @@ const LoadDetails = () => {
 
     const { image, bookName, author, category, rating, tags, review, totalPages, publisher, yearOfPublishing } = book;
 
-    console.log(book);
+    const handleReadBook = () =>{
+        saveBooks(idInt);
+    }
+
+        console.log(book);
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl mt-12">
-            <div className="w-2/4">
+            <div className="lg:w-2/4">
                 <figure className="p-28 bg-[#F3F3F3]"><img src={image} alt="Album" /></figure>
             </div>
-            <div className="px-8 space-y-4 pt-0 w-2/4">
+            <div className="px-8 space-y-4 pt-0 lg:w-2/4">
                 <h2 className="card-title text-4xl font-bold p-font">{bookName}</h2>
                 <p className="font-bold">By : {author}</p>
                 <hr />
@@ -45,7 +50,9 @@ const LoadDetails = () => {
                     <h3 className="font-bold">{rating}</h3>
                 </div>
                 <div className="card-actions">
-                    <button className="btn btn-outline btn-success ">Read</button>
+                    <button 
+                    onClick={handleReadBook}
+                    className="btn btn-outline btn-success ">Read</button>
                     <button className="btn bg-[#50B1C9] text-white font-bold hover:bg-sky-500">Wishlist</button>
                 </div>
             </div>
