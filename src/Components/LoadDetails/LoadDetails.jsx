@@ -13,7 +13,9 @@ const LoadDetails = () => {
         saveBooks(book);
     }
 
-        console.log(book);
+    const handleWishlist = () =>{
+        saveBooks(book)
+    }
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl mt-12">
             <div className="lg:w-2/4">
@@ -53,7 +55,9 @@ const LoadDetails = () => {
                     <button 
                     onClick={handleReadBook}
                     className="btn btn-outline btn-success ">Read</button>
-                    <button className="btn bg-[#50B1C9] text-white font-bold hover:bg-sky-500">Wishlist</button>
+                    <button
+                    onClick={handleWishlist}
+                    className="btn bg-[#50B1C9] text-white font-bold hover:bg-sky-500">Wishlist</button>
                 </div>
             </div>
         </div>

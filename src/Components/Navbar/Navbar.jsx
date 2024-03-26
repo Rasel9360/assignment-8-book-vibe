@@ -17,7 +17,7 @@ const Navbar = () => {
             className={({ isActive }) =>
                 isActive ? 'text-[#23BE0A] border border-[#23BE0A]' : 'font-bold'
             }
-            to="/applied">Pages to Read</NavLink></li>
+            to="/pageTo">Pages to Read</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-lg lg:px-16">
