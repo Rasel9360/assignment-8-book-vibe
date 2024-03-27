@@ -15,6 +15,7 @@ import WishlistBooks from './Components/WishlistBooks/WishlistBooks';
 import { Toaster } from 'react-hot-toast';
 import PageToRead from './Components/PageToRead/PageToRead';
 import Contact from './Components/Contact/Contact';
+import Blogs from './Components/Blogs/Blogs';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/blog',
+        element: <Blogs></Blogs>
       }
     ]
   },

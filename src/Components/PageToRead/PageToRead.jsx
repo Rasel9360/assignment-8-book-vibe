@@ -36,7 +36,7 @@ const PageToRead = () => {
     return (
         <div className='flex justify-center items-center py-5 rounded-xl mt-10 bg-[#13131308]'>
             <BarChart
-                width={1000}
+                width={1200}
                 height={500}
                 data={data}
                 margin={{

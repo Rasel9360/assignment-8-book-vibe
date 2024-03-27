@@ -22,6 +22,11 @@ const Navbar = () => {
             className={({ isActive }) =>
                 isActive ? 'text-[#23BE0A] border border-[#23BE0A]' : 'font-bold'
             }
+            to="/blog">Blog</NavLink></li>
+        <li className="font-bold"><NavLink
+            className={({ isActive }) =>
+                isActive ? 'text-[#23BE0A] border border-[#23BE0A]' : 'font-bold'
+            }
             to="/contact">Contact Us</NavLink></li>
     </>
     return (

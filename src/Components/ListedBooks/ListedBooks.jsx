@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { FaArrowDown } from "react-icons/fa";
-import { getBooks } from "../../Utils";
+import { useState } from "react";
 
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
-    const [read, setRead] = useState([]);
-
-    useEffect(() => {
-        const storedBook = getBooks()
-        setRead(storedBook)
-    }, [])
     return (
         <div>
             <div className="flex justify-center items-center p-8 mt-10 rounded-xl bg-[#1313130D]">
