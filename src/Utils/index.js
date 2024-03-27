@@ -16,11 +16,11 @@ const saveBooks = (book) => {
     let books = getBooks();
     const isExist = books.find(b => b.id === book.id)
     if (isExist) {
-        return toast.error("This blog already exists.");
+        return toast.error("You have Already Read this book");
     }
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
-    toast.success("The blog has been saved successfully!");
+    toast.success("Books Added to Read List");
 }
 
 export{getBooks,saveBooks}

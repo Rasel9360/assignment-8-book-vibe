@@ -34,7 +34,7 @@ const PageToRead = () => {
     };
 
     return (
-        <div className='flex justify-center items-center min-h-screen'>
+        <div className='flex justify-center items-center py-5 rounded-xl mt-10 bg-[#13131308]'>
             <BarChart
                 width={1000}
                 height={500}
@@ -49,7 +49,7 @@ const PageToRead = () => {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
-                <Tooltip></Tooltip>
+                <Tooltip ></Tooltip>
                 <Bar dataKey="pages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
