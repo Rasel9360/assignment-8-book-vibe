@@ -31,11 +31,11 @@ const Contact = () => {
                     <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
                         <label className="block">
                             <span className="mb-2 text-xl font-semibold">Full name</span>
-                            <input type="text" placeholder="Enter Your Name" className="block w-full rounded-md shadow-sm outline-none border-2 p-3 " />
+                            <input type="text" placeholder="Enter Your Name" required className="block w-full rounded-md shadow-sm outline-none border-2 p-3 " />
                         </label>
                         <label className="block">
                             <span className="mb-2 text-xl font-semibold">Email address</span>
-                            <input type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md shadow-sm outline-none border-2 p-3 " />
+                            <input type="email" placeholder="leroy@jenkins.com" required className="block w-full rounded-md shadow-sm outline-none border-2 p-3 " />
                         </label>
                         <label className="block">
                             <span className="mb-2 text-xl font-semibold">Message</span>

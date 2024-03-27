@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { FaArrowDown } from "react-icons/fa";
+import { getBooks } from "../../Utils";
 
 
 const ListedBooks = () => {
-    const [tabIndex, setTabIndex] = useState(0)
+    const [tabIndex, setTabIndex] = useState(0);
+    const [read, setRead] = useState([]);
+
+    useEffect(() => {
+        const storedBook = getBooks()
+        setRead(storedBook)
+    }, [])
     return (
         <div>
             <div className="flex justify-center items-center p-8 mt-10 rounded-xl bg-[#1313130D]">
@@ -27,13 +34,13 @@ const ListedBooks = () => {
                     <Link
                         to=""
                         onClick={() => setTabIndex(0)}
-                        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? 'border border-b-0' : 'border-b'} rounded-t-lg border-gray-400 `}>
+                        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? 'border border-b-0' : 'border-b'} rounded-t-sm border-gray-400 `}>
                         <span>Read Books</span>
                     </Link>
                     <Link
                         to="wishlist"
                         onClick={() => setTabIndex(1)}
-                        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 1 ? 'border border-b-0' : 'border-b'} rounded-t-lg border-gray-400 `}>
+                        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 1 ? 'border border-b-0' : 'border-b lg:w-[90%]'} rounded-t-sm border-gray-400 `}>
                         <span>Wishlist Books</span>
                     </Link>
 
