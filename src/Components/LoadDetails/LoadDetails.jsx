@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBooks } from "../../Utils";
+import { saveBooks, saveWishlist } from "../../Utils";
 
 const LoadDetails = () => {
     const books = useLoaderData();
@@ -14,7 +14,7 @@ const LoadDetails = () => {
     }
 
     const handleWishlist = () =>{
-        saveBooks(book)
+        saveWishlist(book)
     }
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl mt-12">

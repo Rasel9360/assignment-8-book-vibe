@@ -20,7 +20,7 @@ const Navbar = () => {
             to="/pageTo">Pages to Read</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 shadow-lg lg:px-16">
+        <div className="navbar bg-base-100 shadow-lg fixed z-10 lg:px-16">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
